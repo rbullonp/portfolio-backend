@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Roberto Bullón Pérez, desarrollador Backend especializado en Java y Spring Boot."
+    />
+    <meta name="theme-color" content="#061525" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Roberto Bullón — Java Backend Developer" />
+    <meta property="og:description" content="Portfolio de Roberto Bullón: Java, Spring Boot, microservicios y sistemas backend escalables." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:site_name" content="Roberto Bullón — Backend Developer" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Roberto Bullón — Java Backend Developer" />
+    <meta name="twitter:description" content="Java, Spring Boot, microservicios y sistemas backend escalables." />
+    <title>Roberto Bullón — Java Backend Developer</title>
+    <link rel="alternate" hreflang="es" href="index.html" />
+    <link rel="alternate" hreflang="en" href="en/index.html" />
+    <link rel="alternate" hreflang="x-default" href="index.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Volver al inicio">
+        <span>RB</span><i>/</i><small>backend</small>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-controls="main-nav"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a class="active" href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#stack">Stack</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a class="language-switch" href="en/index.html" lang="en" hreflang="en" aria-label="View portfolio in English">EN</a>
+        <a class="nav-cta" href="#contacto">Hablemos</a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section
+        class="hero section-shell"
+        id="inicio"
+        aria-labelledby="hero-title"
+      >
+        <div class="hero-copy reveal">
+          <h1 id="hero-title">
+            <span>Construyo el backend</span><span>que hace que todo</span
+            ><span>funcione.</span>
+          </h1>
+          <p>
+            Desarrollador Backend especializado en Java, Spring Boot y sistemas
+            robustos. Transformo requisitos complejos en APIs limpias, seguras y
+            escalables.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos"
+              >Ver proyectos <span aria-hidden="true">→</span></a
+            >
+            <a
+              class="button button-secondary"
+              id="download-cv"
+              href="CV-Roberto-Bullon-Perez.pdf"
+              download="CV-Roberto-Bullon-Perez.pdf"
+              >Descargar CV <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <p class="availability">
+            <span aria-hidden="true"></span>Disponible para nuevos retos ·
+            Sevilla / Remoto
+          </p>
+        </div>
+
+        <div
+          class="system-map reveal"
+          aria-label="Diagrama animado de una arquitectura de microservicios"
+        >
+          <svg
+            class="connections"
+            viewBox="0 0 680 520"
+            role="img"
+            aria-labelledby="map-title map-desc"
+          >
+            <title id="map-title">Arquitectura de servicios</title>
+            <desc id="map-desc">
+              Un API Gateway conecta servicios de autenticación, usuarios,
+              pedidos y pagos.
+            </desc>
+            <defs>
+              <marker
+                id="arrow"
+                viewBox="0 0 10 10"
+                refX="9"
+                refY="5"
+                markerWidth="5"
+                markerHeight="5"
+                orient="auto-start-reverse"
+              >
+                <path d="M0 0 10 5 0 10z" fill="currentColor"></path>
+              </marker>
+            </defs>
+            <path class="line line-muted" d="M10 210H130"></path>
+            <path
+              class="line line-accent"
+              d="M280 210C330 210 320 76 374 76H433"
+            ></path>
+            <path
+              class="line line-accent"
+              d="M280 210C340 210 330 174 374 174H433"
+            ></path>
+            <path
+              class="line line-accent"
+              d="M280 210C340 210 330 272 374 272H433"
+            ></path>
+            <path
+              class="line line-accent"
+              d="M280 210C330 210 320 370 374 370H433"
+            ></path>
+            <path
+              class="line line-muted"
+              d="M526 76H650M526 174H650M526 272H650M526 370H650"
+            ></path>
+            <circle class="packet" r="5">
+              <animateMotion
+                dur="3.4s"
+                repeatCount="indefinite"
+                path="M280 210C330 210 320 76 374 76H433"
+              ></animateMotion>
+            </circle>
+            <circle class="packet" r="5">
+              <animateMotion
+                dur="3.1s"
+                begin="-.8s"
+                repeatCount="indefinite"
+                path="M280 210C340 210 330 272 374 272H433"
+              ></animateMotion>
+            </circle>
+            <circle class="packet" r="5">
+              <animateMotion
+                dur="3.8s"
+                begin="-1.4s"
+                repeatCount="indefinite"
+                path="M280 210C330 210 320 370 374 370H433"
+              ></animateMotion>
+            </circle>
+          </svg>
+          <div class="service gateway">
+            <span>◇</span><b>API<br />GATEWAY</b>
+          </div>
+          <div class="service service-auth">
+            <span>⌾</span><b>AUTH<br />SERVICE</b>
+          </div>
+          <div class="service service-user">
+            <span>○</span><b>USER<br />SERVICE</b>
+          </div>
+          <div class="service service-order">
+            <span>□</span><b>ORDER<br />SERVICE</b>
+          </div>
+          <div class="service service-payment">
+            <span>▱</span><b>PAYMENT<br />SERVICE</b>
+          </div>
+          <div class="db db-1" aria-hidden="true"></div>
+          <div class="db db-2" aria-hidden="true"></div>
+          <div class="db db-3" aria-hidden="true"></div>
+          <div class="db db-4" aria-hidden="true"></div>
+          <div class="terminal" aria-hidden="true">
+            <p><i>INFO</i> [order-service] Order created</p>
+            <p><i>INFO</i> [event-service] Event published</p>
+            <p><i>INFO</i> [payment-service] Payment authorized</p>
+            <p><i>INFO</i> [order-service] <em>Order confirmed</em></p>
+            <span>&gt; <b>_</b></span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="projects section-shell"
+        id="proyectos"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-heading reveal">
+          <span>/02</span>
+          <h2 id="projects-title">Proyectos seleccionados</h2>
+        </div>
+        <div class="project-list">
+          <article class="project reveal">
+            <button class="project-summary" type="button" aria-expanded="false">
+              <span class="project-index">01</span>
+              <span class="project-intro"
+                ><strong>FindProf</strong
+                ><small
+                  >Plataforma backend para conectar profesionales y
+                  oportunidades.</small
+                ></span
+              >
+              <span class="project-tech"
+                ><b class="project-status">En desarrollo</b>Java · Spring Boot ·
+                Kafka · Docker</span
+              >
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="project-detail">
+              <p>
+                Producto en desarrollo centrado en una arquitectura backend
+                modular, escalable y preparada para evolucionar por servicios.
+              </p>
+            </div>
+          </article>
+          <article class="project reveal">
+            <button class="project-summary" type="button" aria-expanded="false">
+              <span class="project-index">02</span>
+              <span class="project-intro"
+                ><strong>Notium</strong
+                ><small
+                  >Mi TFG, reconocido con matrícula de honor en SAFA.</small
+                ></span
+              >
+              <span class="project-tech"
+                >Java · Spring · PostgreSQL · Angular · Ionic</span
+              >
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="project-detail">
+              <p>
+                Aplicación full stack desarrollada como proyecto final, con dos
+                repositorios independientes que trabajan como un único producto.
+              </p>
+              <div class="repo-split" aria-label="Repositorios de Notium">
+                <a href="https://github.com/sgero/NotiumFrontend" target="_blank" rel="noreferrer"><b>Frontend</b><small>Angular · Ionic</small><em aria-hidden="true">↗</em></a>
+                <a href="https://github.com/sgero/NotiumBackend" target="_blank" rel="noreferrer"><b>Backend</b><small>Java · Spring · PostgreSQL</small><em aria-hidden="true">↗</em></a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal">
+            <button class="project-summary" type="button" aria-expanded="false">
+              <span class="project-index">03</span>
+              <span class="project-intro"
+                ><strong>Safatube</strong
+                ><small
+                  >Plataforma web desarrollada en SAFA con arquitectura
+                  cliente-servidor.</small
+                ></span
+              >
+              <span class="project-tech"
+                >PHP · Symfony · PostgreSQL · Angular</span
+              >
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="project-detail">
+              <p>
+                Proyecto académico dividido en dos repositorios para separar la
+                interfaz web de la API y la persistencia.
+              </p>
+              <div class="repo-split" aria-label="Repositorios de Safatube">
+                <a href="https://github.com/sgero/SafaTubeFront" target="_blank" rel="noreferrer"><b>Frontend</b><small>Angular</small><em aria-hidden="true">↗</em></a>
+                <a href="https://github.com/sgero/SafaTube" target="_blank" rel="noreferrer"><b>Backend</b><small>PHP · Symfony · PostgreSQL</small><em aria-hidden="true">↗</em></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience section-shell" id="experiencia" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <span>/03</span>
+          <h2 id="experience-title">Experiencia</h2>
+        </div>
+        <div class="experience-list">
+          <article class="experience-role reveal">
+            <div class="experience-meta">
+              <span>Agosto 2025 — Actualidad</span>
+              <strong>Emergya</strong>
+            </div>
+            <div class="experience-content">
+              <h3>Mid-Senior Backend Developer</h3>
+              <ul>
+                <li>Desarrollo y mantenimiento de funcionalidades con Java 17 en una aplicación monolítica.</li>
+                <li>Gestión y monitorización de procesos batch para indexación de productos y flujos críticos.</li>
+                <li>Despliegues en múltiples entornos mediante Jenkins y mantenimiento de componentes legacy con AngularJS.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="experience-role reveal">
+            <div class="experience-meta">
+              <span>Marzo 2024 — Junio 2025</span>
+              <strong>Bebeyond</strong>
+            </div>
+            <div class="experience-content">
+              <h3>Backend Developer</h3>
+              <ul>
+                <li>Desarrollo de APIs REST y microservicios con Java, Spring Boot, Node.js y Python.</li>
+                <li>Aplicación de SOLID, Clean Code y DDD; pruebas con JUnit y Mockito y cobertura superior al 80% validada con SonarQube.</li>
+                <li>Contenerización con Docker y orquestación de eventos asíncronos entre microservicios mediante Kafka.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="stack" id="stack" aria-labelledby="stack-title">
+        <div class="section-shell">
+          <div class="section-heading section-heading-dark reveal">
+            <span>/04</span>
+            <h2 id="stack-title">Mi stack</h2>
+          </div>
+          <div class="stack-grid reveal">
+            <div>
+              <h3>Backend</h3>
+              <ul>
+                <li>Java 17–21</li>
+                <li>Spring Boot &amp; WebFlux</li>
+                <li>Node.js</li>
+                <li>Python / Django</li>
+                <li>PHP / Symfony</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Datos</h3>
+              <ul>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>SQLite</li>
+                <li>Solr</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Arquitectura &amp; DevOps</h3>
+              <ul>
+                <li>Microservicios</li>
+                <li>Docker &amp; Kafka</li>
+                <li>Jenkins</li>
+                <li>AWS</li>
+                <li>Git &amp; Maven</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Calidad &amp; Testing</h3>
+              <ul>
+                <li>JUnit</li>
+                <li>Mockito</li>
+                <li>SonarQube</li>
+                <li>SOLID &amp; Clean Code</li>
+                <li>DDD</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="about section-shell"
+        id="sobre-mi"
+        aria-labelledby="about-title"
+      >
+        <div class="section-heading reveal">
+          <span>/05</span>
+          <h2 id="about-title">Sobre mí</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-copy reveal">
+            Soy desarrollador Backend con más de dos años de experiencia
+            construyendo y manteniendo servicios con Java y Spring Boot. He
+            trabajado con microservicios y aplicaciones monolíticas, procesos
+            batch y despliegues entre entornos de desarrollo, QA y producción.
+            Me gusta convertir problemas complejos en soluciones mantenibles,
+            probadas y fáciles de evolucionar, colaborando de forma cercana con
+            equipos multidisciplinares.
+          </p>
+          <ul class="principles reveal">
+            <li><span>01</span> Código mantenible</li>
+            <li><span>02</span> Calidad desde el inicio</li>
+            <li><span>03</span> Entrega y mejora continua</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact" id="contacto" aria-labelledby="contact-title">
+        <div class="section-shell contact-inner reveal">
+          <span class="contact-index">/06</span>
+          <h2 id="contact-title">¿Construimos algo sólido?</h2>
+          <div class="contact-row">
+            <a class="email" href="mailto:robertobull07@gmail.com"
+              >robertobull07@gmail.com</a
+            >
+            <a
+              class="button contact-button"
+              href="mailto:robertobull07@gmail.com?subject=Hablemos%20de%20un%20proyecto"
+              >Escríbeme <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <div class="social-links" aria-label="Perfiles profesionales">
+            <a href="https://github.com/rbullonp" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/roberto-bullon-perez/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <p>© 2026 Roberto Bullón</p>
+      <a href="#inicio" aria-label="Volver arriba">↑</a>
+    </footer>
+  </body>
+</html>
